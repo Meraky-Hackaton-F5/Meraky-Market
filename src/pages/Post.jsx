@@ -8,7 +8,8 @@ const Post = () => {
             <h1>
              {post.title}
             </h1>
-            <p>{post.time}. {post.body} {post.location} {post.userName} {post.img} </p>
+            <p>{post.time}. {post.body} {post.location} {post.userName}  </p>
+            <img src={post.img} alt="imagen"  />
         </>
     );
 };
