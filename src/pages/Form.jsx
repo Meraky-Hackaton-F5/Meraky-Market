@@ -1,4 +1,5 @@
-import "./Login.css"
+import "./Form.css"
+
 const Uploadproduct = () => { 
     return (
         <h1 className="information-container">CRUD-new, edit, delete.</h1>

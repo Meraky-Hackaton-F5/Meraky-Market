@@ -6,26 +6,12 @@ const Post = () => {
     return (
         <>
             <h1>
-                {post.id} - {post.title}
+             {post.title}
             </h1>
-            <p>{post.body}</p>
+            <p>{post.time}. {post.body} {post.location} {post.userName} {post.img} </p>
         </>
     );
 };
 
 export default Post;
 
-// export const loaderPost = async ({ params }) => {
-//     const res = await fetch(
-//         `http://localhost:3000/Products/${params.id}`
-//     );
-
-//         if (!res.ok)
-//             throw {
-//                 status: res.status,
-//                 statusText: "No encontrado",
-//             };
-
-//     const post = await res.json();
-//     return { post };
-// };
