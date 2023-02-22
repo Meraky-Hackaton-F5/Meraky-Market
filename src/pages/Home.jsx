@@ -1,14 +1,15 @@
 import "./Home.css"
-
+import Slide from '../components/Slide';
 
 const Home = () => {
     return (
-        <div className='section-container'>
-           
+
+
+                <Slide/>
 
 
 
-        </div>
+
 
     )
 };

@@ -2,10 +2,8 @@ import { Outlet, useNavigation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Slide from "../components/Slide";
-import Cards from "../components/Card"
-
-
-
+import FeaturedAd from "../components/FeaturedAd";
+// import index from '../router/index';
 
 import "./LayoutPublic.css"
 
@@ -17,26 +15,16 @@ const LayoutPublic = () => {
     return (
         <>
         <Navbar/>
-        <Slide/>
-        <h1 className="title">Anuncios destacados</h1>
-            <div className="anuncios">
-                <Cards/> <Cards/> <Cards/>
-            </div>
-            <div className="anuncios">
-                <Cards/> <Cards/> <Cards/>
-            </div>
-
+        <Slide />
+        <main className="container">
            
-           <main className="container">
-           
-            {navigation.state === "loading" && (
-                <div className="alert alert-info my-S">Loading...</div>
-            )}  
-                <Outlet />
-            </main> 
-           
+           {navigation.state === "loading" && (
+               <div className="alert alert-info my-S">Loading...</div>
+           )}  
+               <Outlet />
+           </main> 
              <Footer/>
-                 
+        
         </>
     );
 };

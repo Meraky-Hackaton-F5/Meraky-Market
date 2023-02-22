@@ -7,6 +7,7 @@ import Advertisement from '../pages/Advertisement';
 import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
 import EditService from "../pages/EditService";
+import Navbar from "../components/Navbar";
 
 
 export const router = createBrowserRouter([
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <Home />, 
+                        element: <><Navbar /> <Home /></>, 
                     },
                     {
                         path: '/form',
@@ -59,3 +60,4 @@ async function loaderAdvertisement () {
     console.log (posts)
     return { posts };
  };
+
