@@ -2,11 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import { productHandler } from "../handlers/productHandler";
 import LayoutPublic from "../layout/LayoutPublic";
 import Home from '../pages/Home';
-import Login from '../pages/Login';
-import Profile from '../pages/Profile';
+import Form from '../pages/Form';
+import Advertisement from '../pages/Advertisement';
 import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
-import 'bootstrap/dist/css/bootstrap.css';
+import EditService from "../pages/EditService";
+
+
 export const router = createBrowserRouter([
     { 
         path: '/',
@@ -21,17 +23,22 @@ export const router = createBrowserRouter([
                         element: <Home />, 
                     },
                     {
-                        path: '/login',
-                        element: <Login />,
+                        path: '/form',
+                        element: <Form />,
                     },
                     {
-                        path: '/profile',
-                        element: <Profile />,
-                        loader: loaderProfile,
+                        path: '/advertisement',
+                        element: <Advertisement />,
+                        loader: loaderAdvertisement,
                     },    
                     {
-                        path: '/profile/:id',
+                        path: '/advertisement/:id',
                         element: <Post />,
+                        loader: loaderPost
+                    }, 
+                    {
+                        path: '/editadvertisement/:id',
+                        element: <EditService />,
                         loader: loaderPost
                     }, 
                    
@@ -47,7 +54,7 @@ async function loaderPost  ({ params })  {
     return { post };
 };
 
-async function loaderProfile () {
+async function loaderAdvertisement () {
  const posts = await productHandler.loadProducts()
     console.log (posts)
     return { posts };
