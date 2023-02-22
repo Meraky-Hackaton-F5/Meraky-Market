@@ -16,6 +16,7 @@ const LayoutPublic = () => {
 
     return (
         <>
+        <Navbar/>
         <Slide/>
         <h1 className="title">Anuncios destacados</h1>
             <div className="anuncios">
@@ -24,7 +25,6 @@ const LayoutPublic = () => {
             <div className="anuncios">
                 <Cards/> <Cards/> <Cards/>
             </div>
-            <Navbar />
 
            
            <main className="container">
