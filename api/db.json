@@ -2,9 +2,11 @@
     "Products": [
       {
         "id": 1,
-        "title": "",
-        "time": "",
-        "body": "",
+        "title": "Paseo de perros",
+        "time": "30 minutos",
+        "body": "Me ofrezco a pasear perros de mi zona los jueves de 16h a 20h",
+        "userName":"Celia Cueria",
+        "location":"Gijón",
         "img":""
         
       },
