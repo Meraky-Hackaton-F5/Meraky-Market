@@ -6,8 +6,7 @@ import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
-
-
+import 'bootstrap/dist/css/bootstrap.css';
 export const router = createBrowserRouter([
     { 
         path: '/',

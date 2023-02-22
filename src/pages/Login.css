@@ -1,3 +1,6 @@
+*{
+    font-style: 'Helvetica';
+}
 .information-container{
 
 display: flex;
