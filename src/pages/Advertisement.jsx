@@ -11,7 +11,10 @@ const Advertisement = () => {
                 posts.map((advertisement) => (
                   <li key={advertisement.id}>
                     <Link to={`/advertisement/${advertisement.id}`}>
-                        {advertisement.id} - {advertisement.title} - {advertisement.time} - {advertisement.body} - {advertisement.userName} - {advertisement.location} - {advertisement.img} 
+                        <img src={advertisement.img} alt="imagen" />
+                        <h1>{advertisement.title}</h1>
+                        <h4>{advertisement.location}</h4>
+                        
                     </Link>
                   </li>  
                 ))
