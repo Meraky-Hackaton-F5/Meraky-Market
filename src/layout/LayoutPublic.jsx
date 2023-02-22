@@ -1,6 +1,7 @@
 import { Outlet, useNavigation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Searchbar from "../components/SearchBar/Searchbar";
 
 
 
@@ -14,7 +15,7 @@ const LayoutPublic = () => {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar />
 
            
            <main className="container">
@@ -25,7 +26,9 @@ const LayoutPublic = () => {
                 <Outlet />
             </main> 
            
-             <Footer/>
+             <Footer/> */}
+
+             <Searchbar/>
                  
         </>
     );
