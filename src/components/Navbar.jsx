@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import "./Navbar.css"
+import logo from '../assets/logomeraki.png';
 
 
 const Navbar = () => {
@@ -7,10 +8,10 @@ const Navbar = () => {
         <nav className="nav-container" >
             <div className="navbar">
                 {/* <img className="logo-Craft" src={Logo} alt="LogoCraft"></img> */}
-                <NavLink to="/" className="navbar-home">Home</NavLink>
-                <NavLink to="/form" className="navbar-Products">Ofrece un servicio</NavLink>
-                <NavLink to="/advertisement" className="navbar-DashBoard">Anuncios</NavLink>
-                <h1 className="navbar-Cart"> 🛒</h1>
+                <NavLink to="/" className="navbar-home"><img src={logo} alt="" className='logo' /></NavLink>
+                <NavLink to="/form" className="navbar-Products"><p>Ofrece un servicio</p></NavLink>
+                <NavLink to="/advertisement" className="navbar-DashBoard"><p>Anuncios</p></NavLink>
+               
             
             </div>
             
