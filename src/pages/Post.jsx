@@ -5,7 +5,7 @@ const Post = () => {
   const { post } = useLoaderData();
 
   return (
-    <div className="container-ads d-flex text">
+    <div className="container-ads d-flex">
       <img className="img-fluid p-5" src={post.img} id="img-ad" alt="imagen" />
       <div className="ads p-5">
         <h1>{post.title}</h1>

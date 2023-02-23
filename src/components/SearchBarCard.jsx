@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Card.css";
+import "./SearchBarCard.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import db from '../../api/db.json';

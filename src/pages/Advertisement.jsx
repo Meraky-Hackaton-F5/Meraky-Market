@@ -9,10 +9,6 @@ const Advertisement = () => {
         <>
         <div className='container-cards'>
         <SearchbarCard />
-        
-       
-       
-
         </div>
         {/* <ul className="Products">
             {posts.length > 0 ? (
