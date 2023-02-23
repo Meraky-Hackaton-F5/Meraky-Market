@@ -1,31 +1,31 @@
-.searContainer {
+/* .searContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 7vh;
-  color: white;
+  color: black;
   margin-top: 10px;
  
-}
+} */
 
-.searchBarStyle {
+/* .searchBarStyle {
   width: 100%;
-}
-
+} */
+/* 
 .listSearchBar {
   text-decoration: none;
   list-style: none;
-}
+} */
 
-.linkStyleSearchBar {
+/* .linkStyleSearchBar {
   color: black;
   text-decoration: none;
-}
-.linkStyleSearchBar:hover {
+} */
+/* .linkStyleSearchBar:hover {
   color: white;
   font-weight: 600;
   cursor: pointer;
-}
+} */
 
 .searchStyle {
   background: #CBDAD5;
@@ -45,12 +45,12 @@ p {
   margin-top: 5%;
 }
 
-.result-search{
+/* .result-search{
   background-color: #89A7B1;
   position: absolute;
   z-index: 1;
   width: 50vw;
-}
+} */
 
 .container-bar{
 display: flex;

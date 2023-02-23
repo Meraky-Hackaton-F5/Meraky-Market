@@ -2,7 +2,7 @@ import { Link, useLoaderData } from 'react-router-dom'
 import './Advertisement.css'
 import SearchbarCard from '../components/SearchBarCard'
 const Advertisement = () => { 
-    const {posts} = useLoaderData();
+    // const {posts} = useLoaderData();
     
 
     return (

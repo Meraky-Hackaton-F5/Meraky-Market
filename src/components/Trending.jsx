@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import db from '../../api/db.json'
 import './Card.css';
+import {Link} from 'react-router-dom';
 function Trending() {
     const data = db.products;
   
@@ -22,7 +23,7 @@ function Trending() {
                 <Card.Text>
                   {product.location}
                 </Card.Text>
-                <Button  className='btn-ad'>Quiero saber más</Button>
+               <Link to={`/advertisement/${product.id}`}><Button  className='btn-ad'>Quiero saber más</Button></Link>
               </Card.Body>
             </div>
           )
