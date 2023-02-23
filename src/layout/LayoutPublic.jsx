@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Slide from "../components/Slide";
 import Cards from "../components/Card"
+import Trending from "../components/TrendingCard/Trending";
 
 
 
@@ -19,10 +20,10 @@ const LayoutPublic = () => {
         <Slide/>
         <h1 className="title">Anuncios destacados</h1>
             <div className="anuncios">
-                <Cards/> <Cards/> <Cards/>
+                <Trending />
             </div>
             <div className="anuncios">
-                <Cards/> <Cards/> <Cards/>
+                
             </div>
             <Navbar />
 
