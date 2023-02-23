@@ -80,30 +80,7 @@
       "user": "Adriana Aguilar",
       "location": "Jaen",
       "img": "https://images.pexels.com/photos/3768114/pexels-photo-3768114.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      "id": 10,
-      "title": "Cuido niños",
-      "time": "1 hora",
-      "user": "celiacueria",
-      "location": "Gijon",
-      "img": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": 11,
-      "title": "Hago la compra",
-      "time": "1 hora",
-      "user": "frerfds",
-      "location": "fdsfsd",
-      "img": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": 12,
-      "title": "Cuido perros",
-      "time": "1 hora",
-      "user": "celia",
-      "location": "gijon",
-      "img": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
+  
   ]
 }
