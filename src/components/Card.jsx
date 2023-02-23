@@ -7,29 +7,30 @@ import db from "../../api/db.json";
 import { Link } from "react-router-dom";
 
 function Cards() {
-  const data = db.products;
-
   return (
-    
-      <div className="cards">
-      {data.map((product) => {
+    <Card style={{ width: '18rem' }}>
+      {data.map(product => {
         return (
-          <div key={product.id} className="card" >
+          <div key={product.id}>
             <Card.Img variant="top" src={product.img} />
             <Card.Body>
               <Card.Title>{product.title}</Card.Title>
-              <Card.Text>{product.location}</Card.Text>
+              <Card.Text>
+                {product.location}
+              </Card.Text>
               {
-                <Link to={`/advertisement/${product.id}`}>
-                  <Button className="btn-ad" variant="primary">Quiero saber más</Button>
-                </Link>
-              }
+
+                    <Link to={`/advertisement/${product.id}`}>
+ <Button variant="primary">Quiero saber más</Button>
+</Link>}
+
+
+              
             </Card.Body>
           </div>
-        );
+        )
       })}
-          </div>
-
+    </Card>
   );
 }
 
