@@ -11,8 +11,8 @@ const Advertisement = () => {
         <div className='container-cards'>
         <Searchbar />
         
-        
         <Cards />
+       
 
         </div>
         {/* <ul className="Products">

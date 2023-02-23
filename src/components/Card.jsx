@@ -7,11 +7,13 @@ import db from "../../api/db.json";
 import { Link } from "react-router-dom";
 
 function Cards() {
+  const data = db.products;
   return (
-    <Card style={{ width: '18rem' }}>
+    
+      <div className="cards">
       {data.map(product => {
         return (
-          <div key={product.id}>
+          <div key={product.id} className="card" >
             <Card.Img variant="top" src={product.img} />
             <Card.Body>
               <Card.Title>{product.title}</Card.Title>
@@ -30,7 +32,7 @@ function Cards() {
           </div>
         )
       })}
-    </Card>
+      </div>
   );
 }
 

@@ -4,6 +4,7 @@
 display: flex;
 width: 80vw;
 flex-wrap: wrap;
+
 justify-content: center;
 align-items: center;
 margin-left: 15vh;
