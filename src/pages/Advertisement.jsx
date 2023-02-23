@@ -1,7 +1,7 @@
 import { Link, useLoaderData } from 'react-router-dom'
-import Searchbar from '../components/SearchBar/Searchbar';
 import Cards from '../components/Card'
 import './Advertisement.css'
+import SearchbarCard from '../components/SearchBarCard'
 const Advertisement = () => { 
     const {posts} = useLoaderData();
     
@@ -9,9 +9,9 @@ const Advertisement = () => {
     return (
         <>
         <div className='container-cards'>
-        <Searchbar />
+        <SearchbarCard />
         
-        <Cards />
+       
        
 
         </div>
