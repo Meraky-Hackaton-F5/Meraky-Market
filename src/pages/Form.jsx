@@ -48,24 +48,63 @@ const CreateProduct = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="title">Título</label>
-            <input name="title" type="text" onChange={handleTitleChange} />
-            <label htmlFor="time">Tiempo</label>
-            <input name="time" type="text" onChange={handleTimeChange}/>
-            <label htmlFor="description">Description</label>
-            <input name="description" type="text" onChange={handleDescriptionChange} />
-            <label htmlFor="user">Usuario</label>
-            <input name="user" type="text" onChange={handleUserChange} />
-            <label htmlFor="location">Localización</label>
-            <input name="location" type="text" onChange={handleLocationChange} />
-            <label htmlFor="img">Imagen</label>
-            <input name="img" type="image" onChange={handleImgChange} />
+        // <form onSubmit={handleSubmit}>
+        //     <label htmlFor="title">Título</label>
+        //     <input name="title" type="text" onChange={handleTitleChange} />
+
+        //     <label htmlFor="time">Tiempo</label>
+        //     <input name="time" type="text" onChange={handleTimeChange}/>
+
+        //     <label htmlFor="description">Description</label>
+        //     <input name="description" type="text" onChange={handleDescriptionChange} />
+
+        //     <label htmlFor="user">Usuario</label>
+        //     <input name="user" type="text" onChange={handleUserChange} />
+
+        //     <label htmlFor="location">Localización</label>
+        //     <input name="location" type="text" onChange={handleLocationChange} />
+
+        //     <label htmlFor="img">Imagen</label>
+        //     <input name="img" type="image" onChange={handleImgChange} />
             
-            <button type="submit">
-                Upload
-            </button>
-        </form>
+        //     <button type="submit">
+        //         Upload
+        //     </button>
+        // </form>
+
+        <form onSubmit={handleSubmit}>
+  <div className="mb-3">
+    <label htmlFor="title" className="form-label">Título</label>
+    <input name="title" type="text" className="form-control" onChange={handleTitleChange}/>
+    
+  </div>
+  <div className="mb-3">
+    <label htmlFor="time" className="form-label">Tiempo</label>
+    <input name="time" type="text" className="form-control" onChange={handleTimeChange}/>
+  </div>
+
+  <div className="mb-3">
+    <label className="form-label" htmlFor="description">Description</label>
+    <input name="description" type="text" className="form-control" onChange={handleDescriptionChange}/>
+  </div>
+
+  <div className="mb-3">
+    <label htmlFor="user" className="form-label">Usuario</label>
+    <input name="user" type="text" className="form-control" onChange={handleUserChange} />
+  </div>
+
+  <div className="mb-3">
+    <label htmlFor="location" className="form-label">Localización</label>
+    <input name="location" type="text" className="form-control" onChange={handleLocationChange} />
+  </div>
+
+  <div className="mb-3">
+    <label htmlFor="img" className="form-label">Imagen</label>
+    <input name="img" type="file" className="form-control" onChange={handleImgChange} />
+  </div>
+
+  <button type="submit" className="btn btn-primary">Upload</button>
+</form>
     );
 };
 
