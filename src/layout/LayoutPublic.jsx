@@ -1,13 +1,12 @@
 import { Outlet, useNavigation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Searchbar from "../components/SearchBar/Searchbar";
-import Slide from "../components/Slide";
-import FeaturedAd from "../components/FeaturedAd";
+// import Searchbar from "../components/SearchBar/Searchbar";
+// import Slide from "../components/Slide";
+// import FeaturedAd from "../components/FeaturedAd";
 // import index from '../router/index';
 
 import "./LayoutPublic.css"
-import Cards from "../components/Card";
 
 
 const LayoutPublic = () => {

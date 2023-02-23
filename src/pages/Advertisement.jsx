@@ -1,5 +1,4 @@
 import { Link, useLoaderData } from 'react-router-dom'
-import Cards from '../components/Card'
 import './Advertisement.css'
 import SearchbarCard from '../components/SearchBarCard'
 const Advertisement = () => { 

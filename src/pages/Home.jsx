@@ -1,6 +1,6 @@
 import "./Home.css"
 import Slide from '../components/Slide';
-import Card from '../components/Card';
+// import Card from '../components/Card';
 import Trending from "../components/Trending";
 const Home = () => {
     return (
@@ -8,7 +8,7 @@ const Home = () => {
 <>
 
                 <Slide/>
-                <h1 className="title">Nuestros servicios</h1>
+                <h1 className="title">Últimos anuncios</h1>
 
             <div className="anuncios">
                 <Trending />

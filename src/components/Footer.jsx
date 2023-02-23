@@ -7,9 +7,9 @@ export const Footer = () => {
     <footer>
       <div className="footerContainer">
         <h5 className= "footerText">© Meraky 2023</h5>
-        <h5 className= "footerText">Aviso legal</h5>
+        <Link to={'/warning'}><h5 className= "footerText">Aviso legal</h5></Link>
         {/* <Link to='/legalstuff' className="footerText">Aviso Legal</Link> */}
-        <h5 className= "footerText">Política de cookies</h5>
+        <Link to={'/cookies'}><h5 className= "footerText">Política de cookies</h5></Link>
         <div className='footerSocialNetworks' >
             <img className='socialNetworks' src="/src/img/icon-facebook.png" alt="Icono de Facebook" />
             <img className='socialNetworks' src="/src/img/icon-linkedin.png" alt="Icono de LinkedIn" />

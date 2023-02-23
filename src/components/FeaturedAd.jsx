@@ -1,5 +1,4 @@
 import React from 'react'
-import Cards from "../components/Card"
 
 const FeaturedAd = () => {
   return (
