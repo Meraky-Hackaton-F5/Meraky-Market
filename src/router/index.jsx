@@ -7,7 +7,7 @@ import Advertisement from '../pages/Advertisement';
 import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
 import Searchbar from "../components/SearchBar/Searchbar"
-import EditService from "../pages/EditService";
+import EditService from "../pages/EditProduct";
 import Navbar from "../components/Navbar";
 import Cards from "../components/Card";
 

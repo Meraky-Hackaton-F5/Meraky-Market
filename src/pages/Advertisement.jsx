@@ -4,7 +4,7 @@ import Cards from '../components/Card'
 import './Advertisement.css'
 const Advertisement = () => { 
     const {posts} = useLoaderData();
-    console.log (posts)
+    
 
     return (
         <>
@@ -28,7 +28,7 @@ const Advertisement = () => {
                   </li>  
                 ))
             ) : (
-                <li>No product found</li>
+                <li>No service found</li>
             )}
         </ul> */}
         </>
