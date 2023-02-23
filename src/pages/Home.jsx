@@ -1,11 +1,13 @@
 import "./Home.css"
 
-
-
 const Home = () => {
     return (
         <div className='section-container'>
-            {/* <section className="bloque"> <div id="servicesAnchor"> <h1>Sale and purchase of 
+            <h1>probando test</h1>
+            
+            {
+            
+            /* <section className="bloque"> <div id="servicesAnchor"> <h1>Sale and purchase of 
 second-hand craft </h1> </div>
                 <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
