@@ -16,7 +16,7 @@ return (
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="" >
                 <NavLink to="/form" className="navbar-Products"><p style={{lineHeight: 1}}>Ofrece un servicio</p></NavLink>
-                <NavLink to="/advertisement" className="navbar-DashBoard"><p>Anuncios</p></NavLink>
+                <NavLink to="/advertisement" className="navbar-DashBoard"><span>Anuncios</span><span> <i class="fas fa-address-card" aria-hidden="true"></i></span></NavLink>
         </Nav>
         </Navbar.Collapse>
         </Container>
