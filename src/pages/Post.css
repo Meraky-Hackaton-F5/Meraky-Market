@@ -8,6 +8,15 @@ h1{
     color: black;
 }
 
+#logo-location{
+    margin-right: 2vh ;
+}
+
+.description{
+    margin-top: 3vh;
+}
 
 
-  
+.user{
+    margin-top: 3vh;
+}
