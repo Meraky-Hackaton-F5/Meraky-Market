@@ -19,11 +19,15 @@ form{
     width: 60vw;
     align-items: center;
     justify-content: center;
-    padding: 10vh;
+    padding: 5vh;
     border-radius: 10vh;
 }
 
 #input-description{
 height: 20vh;
 
+}
+
+h1{
+    color: white;
 }
