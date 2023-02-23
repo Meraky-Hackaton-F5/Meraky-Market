@@ -8,11 +8,9 @@ const Home = () => {
                 <Slide/>
                 <h1 className="title">Anuncios destacados</h1>
             <div className="anuncios">
-                <Card/> 
+                {/* <Card/>  */}
             </div>
-            <div className="anuncios">
-              
-            </div>
+         
 
 
                 </>
