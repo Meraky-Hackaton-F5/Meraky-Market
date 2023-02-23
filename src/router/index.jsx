@@ -6,7 +6,11 @@ import Form from '../pages/Form';
 import Advertisement from '../pages/Advertisement';
 import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
+import Searchbar from "../components/SearchBar/Searchbar"
 import EditService from "../pages/EditProduct";
+import Navbar from "../components/Navbar";
+import Cards from "../components/Card";
+import EditProduct from "../pages/EditProduct";
 
 
 export const router = createBrowserRouter([
@@ -20,7 +24,7 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <Home />, 
+                        element:<Home />, 
                     },
                     {
                         path: '/form',
@@ -37,8 +41,13 @@ export const router = createBrowserRouter([
                         loader: loaderPost
                     }, 
                     {
+                        path: '/searchbar',
+                        element: <Searchbar />,
+                        loader: loaderPost
+                    }, 
+                    {
                         path: '/editadvertisement/:id',
-                        element: <EditService />,
+                        element: <EditProduct />,
                         loader: loaderPost
                     }, 
                    
@@ -59,3 +68,4 @@ async function loaderAdvertisement () {
     console.log (posts)
     return { posts };
  };
+

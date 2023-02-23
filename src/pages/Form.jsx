@@ -45,27 +45,50 @@ const CreateProduct = () => {
         event.preventDefault();
         let newProduct = {title, description, time, user, location, img};
         productHandler.addProduct(newProduct);
+        event.target.reset()
     };
 
+
+
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="title">Título</label>
-            <input name="title" type="text" onChange={handleTitleChange} />
-            <label htmlFor="time">Tiempo</label>
-            <input name="time" type="text" onChange={handleTimeChange}/>
-            <label htmlFor="description">Description</label>
-            <input name="description" type="text" onChange={handleDescriptionChange} />
-            <label htmlFor="user">Usuario</label>
-            <input name="user" type="text" onChange={handleUserChange} />
-            <label htmlFor="location">Localización</label>
-            <input name="location" type="text" onChange={handleLocationChange} />
-            <label htmlFor="img">Imagen</label>
-            <input name="img" type="image" onChange={handleImgChange} />
-            
-            <button type="submit">
-                Upload
-            </button>
-        </form>
+        
+      <div className="container-form">
+
+        <form onSubmit={handleSubmit} itemID="form1">
+          <h1>Cuéntanos que ofreces</h1>
+  <div className="mb-3">
+    <label htmlFor="title" className="form-label">Título</label>
+    <input name="title" type="text" className="form-control" onChange={handleTitleChange} required/>
+    
+  </div>
+  <div className="mb-3">
+    <label htmlFor="time" className="form-label">Tiempo</label>
+    <input name="time" type="text" className="form-control" onChange={handleTimeChange} required/>
+  </div>
+
+  <div className="mb-3">
+    <label className="form-label" htmlFor="description">Descripcion</label>
+    <input name="description" type="text" className="form-control" id="input-description" required onChange={handleDescriptionChange}/>
+  </div>
+
+  <div className="mb-3">
+    <label htmlFor="user" className="form-label">Usuario</label>
+    <input name="user" type="text" className="form-control" required onChange={handleUserChange} />
+  </div>
+
+  <div className="mb-3">
+    <label htmlFor="location" className="form-label">Localización</label>
+    <input name="location" type="text" className="form-control" required onChange={handleLocationChange} />
+  </div>
+
+  <div className="mb-3">
+    <label htmlFor="img" className="form-label">Imagen</label>
+    <input name="img" type="text" className="form-control" onChange={handleImgChange} required/>
+  </div>
+
+  <button type="submit" className="btn btn-primary" id="btn-ad">Enviar</button>
+</form>
+</div>
     );
 };
 

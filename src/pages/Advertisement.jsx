@@ -1,24 +1,37 @@
 import { Link, useLoaderData } from 'react-router-dom'
-
+import Searchbar from '../components/SearchBar/Searchbar';
+import Cards from '../components/Card'
+import './Advertisement.css'
 const Advertisement = () => { 
     const {posts} = useLoaderData();
     
 
     return (
+        <>
+        <div className='container-cards'>
+        <Searchbar />
         
-        <ul className="Products">
+        <Cards />
+       
+
+        </div>
+        {/* <ul className="Products">
             {posts.length > 0 ? (
                 posts.map((advertisement) => (
                   <li key={advertisement.id}>
                     <Link to={`/advertisement/${advertisement.id}`}>
-                        {advertisement.id} - {advertisement.title} - {advertisement.time} - {advertisement.body} - {advertisement.userName} - {advertisement.location} - {advertisement.img} 
+                        <img src={advertisement.img} alt="imagen" />
+                        <h1>{advertisement.title}</h1>
+                        <h4>{advertisement.location}</h4>
+                        
                     </Link>
                   </li>  
                 ))
             ) : (
                 <li>No service found</li>
             )}
-        </ul>
+        </ul> */}
+        </>
     );
  };
  export default Advertisement;

@@ -1,5 +1,29 @@
-.information-container{
+#btn-ad{
+    background-color: #CBDAD5;
+    color: black;
+    border-style: none;
+}
 
-display: flex;
+#btn-ad:hover{
+color: white;
+background-color: #566981;
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    
+}
+form{
+
+    background-color: #566981;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+    border-radius: 10vh;
+}
+
+#input-description{
+height: 20vh;
 
 }
