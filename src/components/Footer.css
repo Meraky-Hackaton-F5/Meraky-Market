@@ -29,3 +29,37 @@
     margin-right: 3vh;
 
 }
+
+@media (min-width: 414px) {
+    .footerContainer{
+        height: 15vh;
+        
+    }
+
+    .socialNetworks{
+        height: 0;
+    }
+  }
+
+  @media (min-width: 375px) {
+    .footerContainer{
+        height: 15vh;
+        
+    }
+
+    .socialNetworks{
+        height: 0;
+    }
+  }
+  
+  @media (min-width: 360px) {
+    .footerContainer{
+        height: 15vh;
+        
+    }
+
+    .socialNetworks{
+        height: 0;
+    }
+  }
+  

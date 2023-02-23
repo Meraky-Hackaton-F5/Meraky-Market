@@ -27,3 +27,19 @@ p{
 .navbar-Products, .navbar-DashBoard{
   text-decoration: none;
 }
+
+
+
+@media (max-width: 414px) {
+  .navigation{
+      height: 15vh;
+      margin-top: -2vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .navigation{
+      height: 15vh;
+      margin-top: -2vh;
+  }
+}

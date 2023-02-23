@@ -4,7 +4,6 @@
 display: flex;
 width: 80vw;
 flex-wrap: wrap;
-
 justify-content: center;
 align-items: center;
 margin-left: 15vh;
@@ -27,3 +26,29 @@ margin-left: 15vh;
 color: white;
 background-color: #566981;
 }
+
+@media (max-width: 414px) {
+    .card {
+      width: 150vw;
+      
+    }
+
+    .cards{
+        width: 90vw;
+        margin-left: 2vh;
+
+    }
+  }
+
+  @media (max-width: 375px) {
+    .card {
+      width: 150vw;
+      
+    }
+
+    .cards{
+        width: 90vw;
+        margin-left: 2vh;
+
+    }
+  }
