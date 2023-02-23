@@ -1,13 +1,27 @@
 #img-ad{
-    width: 35vw;
-    height: 55vh;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 4vh;
+    margin-left: 4vw;
 }
-
+#container-text{
+    margin-top: -12vh;
+}
 h1{
     background-color: #CBDAD5;
     color: black;
 }
 
+#logo-location{
+    margin-right: 2vh ;
+}
+
+.description{
+    margin-top: 3vh;
+}
 
 
-  
+.user{
+    margin-top: 3vh;
+}
+

@@ -1,0 +1,13 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    background-color: #cbdad541;
+    width: 25vw;
+}
+
+.form-contact{
+    width: 30vw;
+}
