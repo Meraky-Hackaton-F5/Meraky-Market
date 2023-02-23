@@ -11,7 +11,7 @@ export const productHandler = {
             "title": newProduct.title,
             "time": newProduct.time,
             "body": newProduct.body,
-            "userName": newProduct.userName,
+            "user": newProduct.user,
             "location": newProduct.location,
              "img": newProduct.img,
         }
@@ -37,7 +37,7 @@ export const productHandler = {
             "title": newProduct.name,
             "time": newProduct.time,
             "body": newProduct.body,
-            "userName": newProduct.userName,
+            "user": newProduct.user,
             "location": newProduct.location,
            "img" : newProduct.img,
         }

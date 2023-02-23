@@ -6,7 +6,7 @@ import Form from '../pages/Form';
 import Advertisement from '../pages/Advertisement';
 import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
-import EditService from "../pages/EditService";
+import EditService from "../pages/EditProduct";
 
 
 export const router = createBrowserRouter([

@@ -2,7 +2,7 @@ import { Link, useLoaderData } from 'react-router-dom'
 
 const Advertisement = () => { 
     const {posts} = useLoaderData();
-    console.log (posts)
+    
 
     return (
         
@@ -16,7 +16,7 @@ const Advertisement = () => {
                   </li>  
                 ))
             ) : (
-                <li>No product found</li>
+                <li>No service found</li>
             )}
         </ul>
     );
