@@ -1,0 +1,38 @@
+.searContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 7vh;
+  color: white;
+  margin-top: 10px;
+}
+
+.searchBarStyle {
+  width: 100%;
+}
+
+.listSearchBar {
+  text-decoration: none;
+  list-style: none;
+}
+
+.linkStyleSearchBar {
+  color: green;
+}
+
+.searchStyle {
+  background: blue;
+  border-radius: 20px;
+  border: 0;
+  width: 100%;
+  color: white;
+  padding: 7px;
+  position: sticky;
+  top: 0;
+}
+
+p {
+  margin-left: 5%;
+  line-height: 40%;
+  margin-top: 5%;
+}

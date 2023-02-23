@@ -6,6 +6,7 @@ import Form from '../pages/Form';
 import Advertisement from '../pages/Advertisement';
 import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
+import Searchbar from "../components/SearchBar/Searchbar"
 import EditService from "../pages/EditService";
 import Navbar from "../components/Navbar";
 import Cards from "../components/Card";
@@ -36,6 +37,11 @@ export const router = createBrowserRouter([
                     {
                         path: '/advertisement/:id',
                         element: <Post />,
+                        loader: loaderPost
+                    }, 
+                    {
+                        path: '/searchbar',
+                        element: <Searchbar />,
                         loader: loaderPost
                     }, 
                     {

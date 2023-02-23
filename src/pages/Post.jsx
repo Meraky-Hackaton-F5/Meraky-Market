@@ -12,7 +12,7 @@ const Post = () => {
           <h3>{post.location}</h3>
           <h5>{post.time}</h5>
         </div>
-        <p>{post.body}</p>
+        <p style={{lineHeight: 1}}>{post.body}</p>
         <div className="ads-user">
             <img className="rounded-circle" src={post.user} alt="" />
           <h6> {post.userName}</h6>

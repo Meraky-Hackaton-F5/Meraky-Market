@@ -1,11 +1,13 @@
 import { Link, useLoaderData } from 'react-router-dom'
+import Searchbar from '../components/SearchBar/Searchbar';
 
 const Advertisement = () => { 
     const {posts} = useLoaderData();
     console.log (posts)
 
     return (
-        
+        <>
+        <Searchbar />
         <ul className="Products">
             {posts.length > 0 ? (
                 posts.map((advertisement) => (
@@ -22,6 +24,7 @@ const Advertisement = () => {
                 <li>No product found</li>
             )}
         </ul>
+        </>
     );
  };
  export default Advertisement;
