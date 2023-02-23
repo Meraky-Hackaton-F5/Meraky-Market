@@ -8,6 +8,7 @@ import Post from '../pages/Post';
 import NotFound from "../pages/NotFound";
 import EditService from "../pages/EditService";
 import Navbar from "../components/Navbar";
+import Cards from "../components/Card";
 
 
 export const router = createBrowserRouter([
@@ -21,7 +22,7 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <><Navbar /> <Home /></>, 
+                        element:<Home />, 
                     },
                     {
                         path: '/form',
