@@ -1,16 +1,20 @@
 import { Link, useLoaderData } from 'react-router-dom'
 import Searchbar from '../components/SearchBar/Searchbar';
 import Cards from '../components/Card'
+import './Advertisement.css'
 const Advertisement = () => { 
     const {posts} = useLoaderData();
-    console.log (posts)
+    
 
     return (
         <>
+        <div className='container-cards'>
         <Searchbar />
         
-
+        
         <Cards />
+
+        </div>
         {/* <ul className="Products">
             {posts.length > 0 ? (
                 posts.map((advertisement) => (
@@ -24,7 +28,7 @@ const Advertisement = () => {
                   </li>  
                 ))
             ) : (
-                <li>No product found</li>
+                <li>No service found</li>
             )}
         </ul> */}
         </>
