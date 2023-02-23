@@ -45,34 +45,15 @@ const CreateProduct = () => {
         event.preventDefault();
         let newProduct = {title, description, time, user, location, img};
         productHandler.addProduct(newProduct);
+        event.target.reset()
     };
 
+
+
     return (
-        // <form onSubmit={handleSubmit}>
-        //     <label htmlFor="title">Título</label>
-        //     <input name="title" type="text" onChange={handleTitleChange} />
+        
 
-        //     <label htmlFor="time">Tiempo</label>
-        //     <input name="time" type="text" onChange={handleTimeChange}/>
-
-        //     <label htmlFor="description">Description</label>
-        //     <input name="description" type="text" onChange={handleDescriptionChange} />
-
-        //     <label htmlFor="user">Usuario</label>
-        //     <input name="user" type="text" onChange={handleUserChange} />
-
-        //     <label htmlFor="location">Localización</label>
-        //     <input name="location" type="text" onChange={handleLocationChange} />
-
-        //     <label htmlFor="img">Imagen</label>
-        //     <input name="img" type="image" onChange={handleImgChange} />
-            
-        //     <button type="submit">
-        //         Upload
-        //     </button>
-        // </form>
-
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} itemID="form1">
   <div className="mb-3">
     <label htmlFor="title" className="form-label">Título</label>
     <input name="title" type="text" className="form-control" onChange={handleTitleChange}/>
