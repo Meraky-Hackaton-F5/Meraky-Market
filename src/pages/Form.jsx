@@ -58,32 +58,32 @@ const CreateProduct = () => {
           <h1>Cuéntanos que ofreces</h1>
   <div className="mb-3">
     <label htmlFor="title" className="form-label">Título</label>
-    <input name="title" type="text" className="form-control" onChange={handleTitleChange} required/>
+    <input name="title" type="text" className="form-control" placeholder="¿Qué ofreces...?" onChange={handleTitleChange} required/>
     
   </div>
   <div className="mb-3">
     <label htmlFor="time" className="form-label">Tiempo</label>
-    <input name="time" type="text" className="form-control" onChange={handleTimeChange} required/>
+    <input name="time" type="text" className="form-control" placeholder="¿Cuánto tiempo...?" onChange={handleTimeChange} required/>
   </div>
 
   <div className="mb-3">
     <label className="form-label" htmlFor="description">Descripcion</label>
-    <input name="description" type="text" className="form-control" id="input-description" required onChange={handleDescriptionChange}/>
+    <input name="description" type="text" className="form-control" id="input-description" required placeholder="Cuéntanos..." onChange={handleDescriptionChange}/>
   </div>
 
   <div className="mb-3">
     <label htmlFor="user" className="form-label">Usuario</label>
-    <input name="user" type="text" className="form-control" required onChange={handleUserChange} />
+    <input name="user" type="text" className="form-control" required placeholder="¿Cómo te llamas...?" onChange={handleUserChange} />
   </div>
 
   <div className="mb-3">
     <label htmlFor="location" className="form-label">Localización</label>
-    <input name="location" type="text" className="form-control" required onChange={handleLocationChange} />
+    <input name="location" type="text" className="form-control" required placeholder="¿Zonas a las que llega tu servicio...?" onChange={handleLocationChange} />
   </div>
 
   <div className="mb-3">
     <label htmlFor="img" className="form-label">Imagen</label>
-    <input name="img" type="text" className="form-control" onChange={handleImgChange} required/>
+    <input name="img" type="text" className="form-control" placeholder="Sube una foto..." onChange={handleImgChange} required/>
   </div>
 
   <button type="submit" className="btn btn-primary" id="btn-ad">Enviar</button>
