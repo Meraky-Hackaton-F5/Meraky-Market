@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Slide from "../components/Slide";
 import Cards from "../components/Card"
 import Trending from "../components/TrendingCard/Trending";
+import SearchbarCard from "../components/SearchbarCard"
 
 
 
@@ -17,10 +18,12 @@ const LayoutPublic = () => {
 
     return (
         <>
+
+        <SearchbarCard />
         <Slide/>
         <h1 className="title">Anuncios destacados</h1>
             <div className="anuncios">
-                <Trending />
+                {/* <Trending /> */}
             </div>
             <div className="anuncios">
                 
