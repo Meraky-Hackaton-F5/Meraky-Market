@@ -18,7 +18,7 @@ const LayoutPublic = () => {
         <>
         <Navbar/>
         {/* <Slide /> */}
-        <main className="container">
+        <main>
            {navigation.state === "loading" && (
                <div className="alert alert-info my-S">Loading...</div>
            )}  

@@ -96,7 +96,14 @@
       "user": "frerfds",
       "location": "fdsfsd",
       "img": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 12,
+      "title": "Cuido perros",
+      "time": "1 hora",
+      "user": "celia",
+      "location": "gijon",
+      "img": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
-
   ]
 }
