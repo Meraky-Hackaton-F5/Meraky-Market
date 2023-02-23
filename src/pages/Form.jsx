@@ -58,32 +58,32 @@ const CreateProduct = () => {
           <h1>Cuéntanos que ofreces</h1>
   <div className="mb-3">
     <label htmlFor="title" className="form-label">Título</label>
-    <input name="title" type="text" className="form-control" onChange={handleTitleChange}/>
+    <input name="title" type="text" className="form-control" onChange={handleTitleChange} required/>
     
   </div>
   <div className="mb-3">
     <label htmlFor="time" className="form-label">Tiempo</label>
-    <input name="time" type="text" className="form-control" onChange={handleTimeChange}/>
+    <input name="time" type="text" className="form-control" onChange={handleTimeChange} required/>
   </div>
 
   <div className="mb-3">
     <label className="form-label" htmlFor="description">Descripcion</label>
-    <input name="description" type="text" className="form-control" id="input-description" onChange={handleDescriptionChange}/>
+    <input name="description" type="text" className="form-control" id="input-description" required onChange={handleDescriptionChange}/>
   </div>
 
   <div className="mb-3">
     <label htmlFor="user" className="form-label">Usuario</label>
-    <input name="user" type="text" className="form-control" onChange={handleUserChange} />
+    <input name="user" type="text" className="form-control" required onChange={handleUserChange} />
   </div>
 
   <div className="mb-3">
     <label htmlFor="location" className="form-label">Localización</label>
-    <input name="location" type="text" className="form-control" onChange={handleLocationChange} />
+    <input name="location" type="text" className="form-control" required onChange={handleLocationChange} />
   </div>
 
   <div className="mb-3">
     <label htmlFor="img" className="form-label">Imagen</label>
-    <input name="img" type="text" className="form-control" onChange={handleImgChange} />
+    <input name="img" type="text" className="form-control" onChange={handleImgChange} required/>
   </div>
 
   <button type="submit" className="btn btn-primary" id="btn-ad">Enviar</button>
