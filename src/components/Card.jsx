@@ -4,6 +4,8 @@ import "./Card.css"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import db from '../../api/db.json'
+import { Link } from 'react-router-dom';
+
 
 function Cards() {
   const data = db.products;
@@ -19,14 +21,13 @@ function Cards() {
               <Card.Text>
                 {product.location}
               </Card.Text>
-              {/* <Link to={`/advertisement/${advertisement.id}`}>
-                        <img src={advertisement.img} alt="imagen" />
-                        <h1>{advertisement.title}</h1>
-                        <h4>{advertisement.location}</h4>
-                        
-                    </Link> */}
+              {
 
-<Button variant="primary">Go somewhere</Button>
+                    <Link to={`/advertisement/${product.id}`}>
+ <Button variant="primary">Quiero saber más</Button>
+</Link>}
+
+
               
             </Card.Body>
           </div>
