@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Searchbarstyle.css"
+import {Link} from 'react-router-dom';
+import db from '../../../api/db.json';
 
 export const ResultContainer = ({ onChange, suggestions }) => {
   const [q, setQ] = useState("");
@@ -9,6 +11,8 @@ export const ResultContainer = ({ onChange, suggestions }) => {
     setQ(e.target.value);
     onChange(e.target.value);
   };
+  const data = db.products;
+
   const handleKeyUp = (e) => {
     console.log(e.keyCode);
     switch (e.keyCode) {
@@ -44,14 +48,15 @@ export const ResultContainer = ({ onChange, suggestions }) => {
 
 
   return (
-    <div onKeyUp={handleKeyUp}>      
+    <div onKeyUp={handleKeyUp} >      
       <input className="searchStyle" placeholder="Busqueda Meraky" value={q} onChange={handleChange} />
       {q && (
-        <div ref={boxRef} active={active}>
-          {suggestions.map((item, i) => (
+        <div ref={boxRef} active={active} className="result-search">
           
+          {suggestions.map((item, i) => (
+            
             <div onMouseOver={() => setActive(i + 1)} key={item}>
-              <p>{item}</p>
+             <Link to={`/advertisement/1`}> <p>{item}</p></Link>
               {/* Poner el item dentro de algo linkeable que conecte por ejemplo, con el id*/}
             </div>
           ))}

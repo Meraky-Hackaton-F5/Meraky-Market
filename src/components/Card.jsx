@@ -23,7 +23,7 @@ function Cards() {
               {
 
                     <Link to={`/advertisement/${product.id}`}>
- <Button variant="primary">Quiero saber más</Button>
+ <Button  className="btn-ad">Quiero saber más</Button>
 </Link>}
 
 
