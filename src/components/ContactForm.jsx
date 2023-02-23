@@ -22,12 +22,12 @@ function ContactForm() {
         <div className="container-form">
             
       <form className="form-contact" onSubmit={handleFormSubmit}>
-      <h2>Contacta conmigo</h2>
+      <h2 className="titleContact">Contacta conmigo</h2>
         <label>
           
-          <textarea value={message} onChange={handleTextareaChange} />
+          <textarea  value={message} onChange={handleTextareaChange} placeholder="Escribe aqui tu mensaje"/>
         </label>
-        <button className="btn-ad" type="submit">Enviar mensaje</button>
+        <button className="btn btn-primary" id="btn-ad" type="submit">Enviar mensaje</button>
       </form>
       </div>
     );

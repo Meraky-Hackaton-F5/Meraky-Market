@@ -8,13 +8,14 @@ const Post = () => {
   const { post } = useLoaderData();
 
   return (
-    <div className="container-ads d-flex">
+    <div id="div-post" className="container-ads d-flex">
       <img className="img-fluid " id="img-ad" src={post.img} alt="imagen" />
       <div className="ads p-2" id="container-text">
-        <h1 className="title">{post.title}</h1>
+      
+        <h1 className="title-ad">{post.title}</h1>
         <div className="ad-title d-flex justify-content-between">
           <h3><img src={Location} id="logo-location"/>{post.location}</h3>
-          <h5><img src={Time} id="logo-location"/>{post.time}</h5>
+          <h5 className="time"><img src={Time} id="logo-location"/>{post.time}</h5>
           </div>
           <div>
           <h5 className="description">{post.description}</h5>

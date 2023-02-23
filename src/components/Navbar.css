@@ -26,8 +26,13 @@ p{
 
 .navbar-Products, .navbar-DashBoard{
   text-decoration: none;
+  font-weight: 600;
 }
 
+.navbar-Products:hover{
+  color: red;
+
+}
 
 
 @media (max-width: 414px) {
