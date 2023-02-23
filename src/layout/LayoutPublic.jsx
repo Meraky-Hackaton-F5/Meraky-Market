@@ -6,6 +6,7 @@ import FeaturedAd from "../components/FeaturedAd";
 // import index from '../router/index';
 
 import "./LayoutPublic.css"
+import Cards from "../components/Card";
 
 
 const LayoutPublic = () => {
@@ -17,7 +18,6 @@ const LayoutPublic = () => {
         <Navbar/>
         <Slide />
         <main className="container">
-           
            {navigation.state === "loading" && (
                <div className="alert alert-info my-S">Loading...</div>
            )}  
