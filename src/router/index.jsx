@@ -34,7 +34,11 @@ export const router = createBrowserRouter([
                         path: '/profile/:id',
                         element: <Post />,
                         loader: loaderPost
-                    }, 
+                    },
+                    /* {
+                        path: '/legalstuff',
+                        element: <LegalStuff />,
+                    },  */
                    
                 ]
             },
