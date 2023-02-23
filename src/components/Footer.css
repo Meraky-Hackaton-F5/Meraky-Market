@@ -10,12 +10,11 @@
     font-family: 'Inder', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: medium;
+    font-size: larger;
     line-height: 38px;
     color: #000000;
 }
 
-.footerSocialNetworks {
-    display: flex;
-    justify-content: space-around;
+.socialNetworks {
+    margin: 5px;
 }
