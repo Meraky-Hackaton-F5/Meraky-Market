@@ -4,7 +4,7 @@ Meraky-Market, your platform of reference to selflessly share skills and service
 Be part of our community, create meaningful connections to help improve society through small actions.
 
 Our vision comes from the origin of Meraky
-:raised_hands: Hacer todo de manera apasionada y creativa, casi dejando un pedazo del alma en ello. :raised_hands:
+:raised_hands: Do everything with passion and creativity , almost leaving a piece of the soul in it. :raised_hands:
   
 
 # :computer: Desktop graphic reference
